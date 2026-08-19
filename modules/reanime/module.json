@@ -1,0 +1,21 @@
+{
+  "sourceName": "reanime",
+  "iconUrl": "https://www.google.com/s2/favicons?sz=128&domain_url=https://reanime.to",
+  "author": {
+    "name": "Dev",
+    "icon": "https://github.githubassets.com/favicons/favicon.png",
+    "url": ""
+  },
+  "version": "1.0.0",
+  "language": "French (SUB)",
+  "streamType": "HLS",
+  "quality": "1080p",
+  "baseUrl": "https://reanime.to/",
+  "searchBaseUrl": "https://reanime.to/?s=%s",
+  "scriptUrl": "https://raw.githubusercontent.com/ArthurRoux99/sora-modules/main/modules/reanime/script.js",
+  "type": "anime",
+  "downloadSupport": false,
+  "asyncJS": true,
+  "streamAsyncJS": true,
+  "softsub": false
+}

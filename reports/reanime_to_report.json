@@ -1,0 +1,14 @@
+{
+  "baseUrl": "https://reanime.to",
+  "targetUrl": "https://reanime.to",
+  "timestamp": "2026-08-19T16:26:34.074Z",
+  "siteType": "HTML/Scraping",
+  "search": {
+    "detectedFormAction": null,
+    "searchParam": "q",
+    "estimatedSearchUrl": "https://reanime.to/?s=%s"
+  },
+  "animeList": [],
+  "detectedPlayers": [],
+  "sampleAnime": null
+}

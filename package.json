@@ -1,0 +1,19 @@
+{
+  "name": "sora-extension-toolkit",
+  "version": "1.0.0",
+  "description": "Toolkit pour créer des extensions Sora pour sites d'anime streaming",
+  "type": "module",
+  "scripts": {
+    "analyze": "node tools/site-analyzer.js",
+    "generate": "node tools/module-generator.js",
+    "test-module": "node tools/module-tester.js",
+    "deploy": "node tools/deploy.js",
+    "assist": "node tools/llm-assistant.js"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "cheerio": "^1.0.0",
+    "inquirer": "^12.0.0",
+    "ora": "^8.0.0"
+  }
+}

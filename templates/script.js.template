@@ -1,0 +1,106 @@
+// {{SOURCE_NAME}} - Module Sora
+// Généré par Sora Extension Toolkit
+
+/**
+ * Recherche de contenu par mot-clé
+ * @param {string} keyword - Le terme de recherche
+ * @returns {string} JSON stringifié [{title: string, image: string, href: string}]
+ */
+async function searchResults(keyword) {
+    try {
+        const encodedKeyword = encodeURIComponent(keyword);
+        // {{SEARCH_LOGIC}}
+        const response = await fetch(`{{SEARCH_BASE_URL}}${encodedKeyword}`);
+        const data = JSON.parse(response);
+        
+        const results = data.map(item => ({
+            title: item.title || item.name || '',
+            image: item.image || item.poster || item.thumbnail || '',
+            href: item.url || item.href || ''
+        }));
+        
+        return JSON.stringify(results);
+    } catch (error) {
+        console.log('searchResults error: ' + error);
+        return JSON.stringify([{ title: 'Error', image: '', href: '' }]);
+    }
+}
+
+/**
+ * Extraction des détails d'un contenu
+ * @param {string} url - L'URL / href de l'anime (provenant de searchResults)
+ * @returns {string} JSON stringifié {description: string, aliases: string, airdate: string}
+ */
+async function extractDetails(url) {
+    try {
+        // {{DETAILS_LOGIC}}
+        const response = await fetch(url);
+        // Traitement (JSON ou scraping HTML regex)...
+        
+        const details = {
+            description: 'Description du contenu...',
+            aliases: 'Titres alternatifs / Genre',
+            airdate: '2024'
+        };
+        
+        return JSON.stringify(details);
+    } catch (error) {
+        console.log('extractDetails error: ' + error);
+        return JSON.stringify({ description: 'Erreur lors de la récupération des détails', aliases: 'Inconnu', airdate: 'Inconnu' });
+    }
+}
+
+/**
+ * Extraction des épisodes d'un anime
+ * @param {string} url - L'URL / href de l'anime
+ * @returns {string} JSON stringifié [{href: string, number: number}]
+ */
+async function extractEpisodes(url) {
+    try {
+        // {{EPISODES_LOGIC}}
+        const response = await fetch(url);
+        // Traitement (JSON ou scraping HTML regex)...
+        
+        const episodes = [
+            {
+                href: url + '/episode-1',
+                // IMPORTANT : number doit impérativement être un entier (int), pas un string
+                number: parseInt(1, 10)
+            }
+        ];
+        
+        return JSON.stringify(episodes);
+    } catch (error) {
+        console.log('extractEpisodes error: ' + error);
+        return JSON.stringify([]);
+    }
+}
+
+/**
+ * Extraction des liens de streaming pour un épisode
+ * @param {string} url - L'URL / href de l'épisode (provenant de extractEpisodes)
+ * @returns {string} JSON stringifié {streams: [{title: string, streamUrl: string, headers: object}], subtitle?: string} ou direct URL string
+ */
+async function extractStreamUrl(url) {
+    try {
+        // {{STREAM_LOGIC}}
+        const response = await fetch(url);
+        // Traitement pour extraire le flux m3u8 ou mp4 (ou appel Global Extractor)...
+        
+        const streamData = {
+            streams: [
+                {
+                    title: 'Serveur Principal',
+                    streamUrl: 'https://example.com/video.m3u8',
+                    headers: {}
+                }
+            ]
+            // subtitle: "https://example.com/subs.vtt" // Optionnel si softsub: true
+        };
+        
+        return JSON.stringify(streamData);
+    } catch (error) {
+        console.log('extractStreamUrl error: ' + error);
+        return JSON.stringify({ streams: [] });
+    }
+}

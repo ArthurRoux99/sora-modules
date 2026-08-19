@@ -1,0 +1,53 @@
+{
+  "type": "data",
+  "nodes": [
+    {
+      "type": "data",
+      "data": [
+        {
+          "dockPosition": 1,
+          "isAuthed": 2
+        },
+        null,
+        false
+      ],
+      "uses": {}
+    },
+    null,
+    {
+      "type": "data",
+      "data": [
+        {
+          "anime": 1,
+          "episodes": 1,
+          "error": 2,
+          "seo": 3
+        },
+        null,
+        "Anime not found",
+        {
+          "title": 4,
+          "description": 5,
+          "keywords": 6,
+          "canonical": 7,
+          "image": 8,
+          "robots": 9
+        },
+        "Anime Not Found | Re:ANIME",
+        "The requested anime could not be found on Re:ANIME.",
+        "reanime, anime not found",
+        "https://reanime.to",
+        "https://reanime.to/og.png",
+        "noindex, follow"
+      ],
+      "uses": {
+        "search_params": [
+          "nid"
+        ],
+        "params": [
+          "slug"
+        ]
+      }
+    }
+  ]
+}

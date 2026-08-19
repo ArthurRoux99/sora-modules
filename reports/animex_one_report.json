@@ -1,0 +1,14 @@
+{
+  "baseUrl": "https://animex.one",
+  "targetUrl": "https://animex.one/home",
+  "timestamp": "2026-08-19T16:21:11.706Z",
+  "siteType": "HTML/Scraping",
+  "search": {
+    "detectedFormAction": null,
+    "searchParam": "q",
+    "estimatedSearchUrl": "https://animex.one/?s=%s"
+  },
+  "animeList": [],
+  "detectedPlayers": [],
+  "sampleAnime": null
+}

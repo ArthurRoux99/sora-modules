@@ -1,0 +1,21 @@
+{
+  "sourceName": "AnimeMock",
+  "iconUrl": "https://www.google.com/s2/favicons?sz=128&domain_url=https://animemock.local",
+  "author": {
+    "name": "Arthur",
+    "icon": "https://github.githubassets.com/favicons/favicon.png",
+    "url": "https://github.com"
+  },
+  "version": "1.0.0",
+  "language": "French (SUB)",
+  "streamType": "HLS",
+  "quality": "1080p",
+  "baseUrl": "https://animemock.local/",
+  "searchBaseUrl": "https://animemock.local/search?q=%s",
+  "scriptUrl": "https://raw.githubusercontent.com/username/sora-modules/main/modules/AnimeMock/script.js",
+  "type": "anime",
+  "downloadSupport": false,
+  "asyncJS": true,
+  "streamAsyncJS": true,
+  "softsub": false
+}

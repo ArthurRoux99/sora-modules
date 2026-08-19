@@ -1,0 +1,21 @@
+{
+  "sourceName": "{{SOURCE_NAME}}",
+  "iconUrl": "{{ICON_URL}}",
+  "author": {
+    "name": "{{AUTHOR_NAME}}",
+    "icon": "{{AUTHOR_ICON}}",
+    "url": "{{AUTHOR_URL}}"
+  },
+  "version": "1.0.0",
+  "language": "{{LANGUAGE}}",
+  "streamType": "{{STREAM_TYPE}}",
+  "quality": "{{QUALITY}}",
+  "baseUrl": "{{BASE_URL}}",
+  "searchBaseUrl": "{{SEARCH_BASE_URL}}",
+  "scriptUrl": "{{SCRIPT_URL}}",
+  "type": "{{TYPE}}",
+  "downloadSupport": {{DOWNLOAD_SUPPORT}},
+  "asyncJS": true,
+  "streamAsyncJS": true,
+  "softsub": {{SOFTSUB}}
+}
