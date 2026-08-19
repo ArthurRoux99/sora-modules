@@ -37,9 +37,9 @@ export async function generateModule(config) {
     const manifestReplacements = {
         '{{SOURCE_NAME}}': config.sourceName || moduleName,
         '{{ICON_URL}}': config.iconUrl || `https://www.google.com/s2/favicons?sz=128&domain_url=${config.baseUrl}`,
-        '{{AUTHOR_NAME}}': config.authorName || 'Anonymous',
+        '{{AUTHOR_NAME}}': config.authorName || 'Arthur',
         '{{AUTHOR_ICON}}': config.authorIcon || 'https://github.githubassets.com/favicons/favicon.png',
-        '{{AUTHOR_URL}}': config.authorUrl || '',
+        '{{AUTHOR_URL}}': config.authorUrl || 'https://github.com',
         '{{LANGUAGE}}': config.language || 'French (SUB)',
         '{{STREAM_TYPE}}': config.streamType || 'HLS',
         '{{QUALITY}}': config.quality || '1080p',
